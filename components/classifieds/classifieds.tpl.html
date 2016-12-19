@@ -1,0 +1,78 @@
+
+<nav class="navbar navbar-inverse">
+	<div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    	<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-nav" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">NG-Classifieds</a>
+	      <a href="" ng-click="vm.openSidebar()" id="menu-toggle"><i class="fa fa-plus-circle"></i> New Classified</a>
+    	</div>
+	    <div class="nav navbar-right nav-search">
+	    	<div class="collapse navbar-collapse navbar-ex1-collapse">
+	    		<ul class="nav navbar-nav side-nav">
+	    			<li>
+			    		<input ng-model="classifiedsFilter" type="search" id="search" class="form-control" placeholder="search ..."></input>
+			    	</li>
+			    	<li>
+			    		<select ng-model="category" id="category" class="form-control">
+			    			<option value="">All Categories</option>
+			    			<option ng-repeat="category in vm.categories" value="{{ category }}">{{ category }}</option>
+			    		</select>
+			    	</li>
+			    </ul>
+		    </div>
+    	</div>
+  	</div><!-- /.container-fluid -->
+</nav>
+
+<ui-view></ui-view>
+
+<div id="page-content-wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-md-4" ng-repeat="classified in vm.classifieds | filter: classifiedsFilter | filter: category">
+						<div class="well">
+							<img class="img-responsive img-rounded" src="{{ classified.image }}">
+								<div class="classified-info" ng-show="!showContact">
+									<h1>{{ classified.title | uppercase }}</h1>
+										<h3>{{ classified.posted | date:'longDate' }}</h3> 
+										<h3>{{ classified.price | currency }}</h3>
+										<p>{{ classified.desc }}</p>
+								</div>
+
+								<div class="classified-contact" ng-show="showContact">
+									<p><i class="fa fa-user"></i> {{ classified.contact.name }}</p>
+									<p><i class="fa fa-phone"></i> {{ classified.contact.phone }}</p>
+									<p><i class="fa fa-envelope"></i> {{ classified.contact.email }}</p>
+								</div>
+
+								<div layout="row">
+									<button class="btn btn-primary btn-sm" ng-show="!showContact" ng-click="showContact = true"><i class="fa fa-envelope-o"></i> Contact</button>
+									<button class="btn btn-info btn-sm" ng-show="showContact" ng-click="showContact = false"><i class="fa fa-info-circle"></i> Details</button>
+									<button class="btn btn-success btn-sm" ng-show="!showAdmin" ng-click="showAdmin = true"><i class="fa fa-lock"></i> Admin</button>
+									<button class="btn btn-danger btn-sm" ng-show="showAdmin" ng-click="showAdmin = false"><i class="fa fa-close"></i> Close</button>
+								</div>
+
+								<div class="classified-admin" ng-if="showAdmin">
+									<hr>
+									<h3>Administration</h3>
+									<div layout="row">
+										<button ng-click="vm.editClassified(classified)" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> Edit</button>
+										<button ng-click="vm.deleteClassified(classified)" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</button>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="notify"><span id="notifyType" class=""></span></div>
+</div>

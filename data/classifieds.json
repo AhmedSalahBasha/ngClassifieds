@@ -1,0 +1,112 @@
+[
+	{
+		"id":"1",
+		"title":"Xperia Z3",
+		"desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"price":759,
+		"posted": "2016-4-23",
+		"contact":{
+			"name":"Ahmed Salah",
+			"phone":"+201007033839",
+			"email":"a.salah.b@gmail.com"
+		},
+		"categories":[
+			"Electornics"
+
+		],
+		"image":"imgs/1.jpg",
+		"views":214
+	},
+	{
+		"id":"2",
+		"title":"Xperia Z2",
+		"desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"price":809,
+		"posted": "2016-4-20",
+		"contact":{
+			"name":"Mohamed Salah",
+			"phone":"+201007033839",
+			"email":"a.salah.b@gmail.com"
+		},
+		"categories":[
+			"Mobiles",
+			"Computers",
+			"Electornics"
+		],
+		"image":"imgs/2.jpg",
+		"views":219
+	},
+	{
+		"id":"3",
+		"title":"Xperia Mini",
+		"desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"price":500,
+		"posted": "2016-9-23",
+		"contact":{
+			"name":"Ahmed Salah",
+			"phone":"+201007033839",
+			"email":"a.salah.b@gmail.com"
+		},
+		"categories":[
+			"Computers",
+			"Cars",
+			"Electornics"
+		],
+		"image":"imgs/3.jpg",
+		"views":115
+	},
+	{
+		"id":"4",
+		"title":"IPhone 6",
+		"desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"price":1240,
+		"posted": "2016-5-1",
+		"contact":{
+			"name":"Amr Salah",
+			"phone":"+201007033839",
+			"email":"a.salah.b@gmail.com"
+		},
+		"categories":[
+			"Computers",
+			"Cars"
+		],
+		"image":"imgs/4.jpg",
+		"views":643
+	},
+	{
+		"id":"5",
+		"title":"Xperia Z3",
+		"desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"price":759,
+		"posted": "2016-4-23",
+		"contact":{
+			"name":"Ahmed Salah",
+			"phone":"+201007033839",
+			"email":"a.salah.b@gmail.com"
+		},
+		"categories":[
+			"Mobiles",
+			"Computers"
+		],
+		"image":"imgs/5.jpg",
+		"views":214
+	},
+	{
+		"id":"6",
+		"title":"IPhone 5S",
+		"desc":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"price":759,
+		"posted": "2016-4-23",
+		"contact":{
+			"name":"Ahmed Salah",
+			"phone":"+201007033839",
+			"email":"a.salah.b@gmail.com"
+		},
+		"categories":[
+			"Mobiles",
+			"Electornics"
+		],
+		"image":"imgs/6.png",
+		"views":214
+	}
+]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ngClassified</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
+	<link rel="styleshee" type="text/css" href="node-modules/mdi/css/materialdesignicons.min.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/simple-sidebar.css">
+</head>
+<body ng-app="ngClassifieds">
+
+<ui-view></ui-view>
+
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-animate/angular-animate.js"></script>
+<script src="node_modules/angular-aria/angular-aria.js"></script>
+<script src="node_modules/angular-material/angular-material.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="scripts/app.js"></script>
+<script src="components/classifieds/classifieds.ctr.js"></script>
+<script src="components/classifieds/classifieds.fac.js"></script>
+<script src="components/classifieds/new/classifieds.new.ctr.js"></script>
+<script src="components/classifieds/edit/classifieds.edit.ctr.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- Lodash JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.11.2/lodash.min.js"></script>
+<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+
+<script type="text/javascript">
+// Toggle Menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+$("#success").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+// Success Message
+$("#success").click(function () {
+  $(".notify").toggleClass("active");
+  $("#notifyType").toggleClass("success");
+  
+  setTimeout(function(){
+    $(".notify").removeClass("active");
+    $("#notifyType").removeClass("success");
+  },2000);
+});
+</script>
+</body>
+</html>

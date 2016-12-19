@@ -1,0 +1,25 @@
+<div id="wrapper">
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+	    <ul class="sidebar-nav">
+	        <li class="sidebar-brand">
+	            <span>Add New Classified</span>
+		        <form method="post">
+				  <div class="form-group">
+				    <input type="text" ng-model="classified.title" class="form-control" id="title" placeholder="title...">
+				  </div>
+				  <div class="form-group">
+				    <input type="number" ng-model="classified.price" class="form-control" id="price" placeholder="price...">
+				  </div>
+				  <div class="form-group">
+				    <textarea id="desc" rows="4" ng-model="classified.desc" class="form-control" placeholder="description..."></textarea>
+				  </div>
+				  <div class="form-group">
+				    <input type="text" ng-model="classified.image" class="form-control" id="image" placeholder="image URL...">
+				  </div>
+				  <button ng-if="!editing" ng-click="vm.saveClassified(classified)" id="success" class="btn btn-success btn-sm pull-right">Add</button>
+				</form>
+	    </ul>
+	</div>
+	<!-- /#sidebar-wrapper -->
+</div>
